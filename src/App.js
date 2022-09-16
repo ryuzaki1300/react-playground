@@ -4,7 +4,9 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Header from 'Components/Sections/Header';
 import Products from 'Components/Pages/Products';
+import Product from 'Components/Pages/Product';
 import Blogs from 'Components/Pages/Blogs';
+import Blog from 'Components/Pages/Blog';
 import Contact from 'Components/Pages/Contact';
 import Home from 'Components/Pages/Home';
 import About from 'Components/Pages/About';
@@ -30,8 +32,14 @@ function App() {
               <Route path="/products">
                 <Products />
               </Route>
+              <Route path="/product/:id">
+                <Product />
+              </Route>
               <Route path="/blogs">
                 <Blogs />
+              </Route>
+              <Route path="/blog/:id">
+                <Blog />
               </Route>
               <Route path="/contact-us">
                 <Contact />
