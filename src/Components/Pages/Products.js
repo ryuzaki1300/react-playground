@@ -1,5 +1,5 @@
-import useAxios from '../../useAxios';
-import ProductList from '../ProductList';
+import useAxios from 'Hooks/useAxios';
+import ProductList from 'Components/Sections/ProductList';
 
 const Products = () => {
     

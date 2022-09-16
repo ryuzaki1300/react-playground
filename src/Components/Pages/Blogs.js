@@ -1,14 +1,12 @@
-import useAxios from '../../useAxios';
-import BlogList from '../BlogList';
+import useAxios from 'Hooks/useAxios';
+import BlogList from 'Components/Sections/BlogList';
 
 const Blogs = () => {
-
-    const config = {
+    
+    const { data:blogs, pending, error } = useAxios({
         url: "https://lavazemjanebi.com/api/shop/product/list",
         method: 'post'
-    }
-    
-    const { data:blogs, pending, error } = useAxios(config);
+    });
 
     return ( 
         <div className="page-contact">
