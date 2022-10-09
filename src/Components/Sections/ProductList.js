@@ -4,7 +4,9 @@ const ProductList = ({ products }) => {
     return ( 
         <div className="row">
             {products.map((product) => (
-                <ProductThumb product={ product } key={ product.id } />
+                <div className="col-4" key={ product.id } >
+                    <ProductThumb product={ product } />
+                </div>
             ))}
         </div>
      );
